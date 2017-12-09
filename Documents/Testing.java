@@ -8,7 +8,6 @@ public class Testing
 	private int correct;
 	private int numQuestions;
 	private int count;
-	private String question;
 	private String[] questions;
 	private String[] answers;
 	private String filepath;
@@ -34,7 +33,9 @@ public class Testing
 	File file = new File(filepath);
 	File file2 = new File(filepath2);
 	//read the text files filled with questions and answers
+	@SuppressWarnings("resource")
 	Scanner inputFile = new Scanner(file);
+	@SuppressWarnings("resource")
 	Scanner inputFile2 = new Scanner(file2);
 	//create an array to store the questions and answers
 	questions = new String[numQuestions];
@@ -69,10 +70,10 @@ public class Testing
 			index = 0;
 			System.out.println("\nThere are no more questions in your set.\n");
 			System.out.println("We are now calculating your score.\n");
-			double score = (double) (correct / numQuestions) * 100;
+			double score = ((double) correct / numQuestions) * 100;
 			if (score <= 0){ System.out.println("Your score is 0%\n");}
 			else {System.out.println("Your score is " + score + "%\n");}
-			end = true;			
+			end = true;
 		}
 	}
 	public void checkAnswer(String answer)
