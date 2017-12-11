@@ -32,7 +32,7 @@ System.out.println("Welcome to the Computer Science Review Program.\n");
 	switch(input){
 		case "1":
 		//load the questions and answers
-		test.loadQuestionsAndAnswers(5);
+		test.loadQuestionsAndAnswers(6);
 		do
 		{
 		//display the question
