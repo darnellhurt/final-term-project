@@ -1,0 +1,6 @@
+What keyword allows you to exit an iteration of a loop?
+What variable type allows for precision like this: 0.552
+A do-while loop has a pre-condition that must be met before any of its statements are executed? (True or False)
+What number does the first indice of an array start at?
+Strings are created using single quotes. (True or False)
+What variable type allows you to set it to true or false?
