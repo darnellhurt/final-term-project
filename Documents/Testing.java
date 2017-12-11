@@ -24,6 +24,7 @@ public class Testing
 		//this sets the filepath for the questions
 		this.filepath = filepath;
 		//this sets the filepath for the answers
+
 		this.filepath2 = filepath2;
 	}
 	//methods
@@ -43,6 +44,7 @@ public class Testing
 	
 	int x = 0;
 	int nq = numQuestions;
+	this.end = false;
 	this.count = numQuestions;
 	this.numQuestions = numQuestions;
 	//load the questions and answers into their array
